@@ -2,9 +2,11 @@
 
 第一届离谱中学生物理竞赛
 
-目前包含 **document**（试题）和 **answer**（题目答案）部分，不包含谜题部分的答案。答案部分会随机出现一些与题目背景和物理图像有关的说明。
+目前包含 **document**（试题）和 **answer**（题目答案）部分，不包含谜题部分的答案。对应的文件夹中有对应文档的tex和pdf版本。
 
-所有文档目前只有中文版，但试题中的谜题部分涉及一些英文线索。
+答案部分会随机出现一些与题目背景和物理图像有关的说明。
+
+所有文档目前只有中文版，但试题中的谜题部分涉及一些其他语言的线索。
 
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
