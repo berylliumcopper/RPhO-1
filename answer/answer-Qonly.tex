@@ -541,7 +541,7 @@
 	\begin{equation}\label{E3-03}
 		\vec v_s=\Omega_1R_0\left(\cos\theta_0\hat x_1+\sin\theta_0\hat z_1\right)
 	\end{equation}	
-
+	
 	在任意时刻$t$，$C$点在$S_1$参考系中的位矢为
 	\begin{equation}\label{E3-04}
 		\vec r_1(t)=(b/2)\hat x_1+(h-H/2)\hat z_1+R_0\left(\sin(\Omega_1t-\theta_0)\hat x_1+\cos(\Omega_1t-\theta_0)\hat z_1\right)
@@ -580,7 +580,7 @@
 	
 	错误的位置矢量是由$\vec v_1^{\star}$再次积分得到的，即
 	\begin{equation}
-		\vec r_1^{\star}(t)=\int_{0}^{t}\vec v_0(t')\ud t'+\vec r_s
+		\vec r_1^{\star}(t)=\int_{0}^{t}\vec v_1^{\star}(t')\ud t'+\vec r_s
 	\end{equation}
 	
 	结合\eqref{E3-02}和\eqref{E3-09}，得到
@@ -612,8 +612,8 @@
 	在肘关节不动的情况下，手臂整体可以认为是一个刚体。计算$t=0$时刻该刚体的质心$G$相对$A$点的位置，得到
 	\begin{equation}
 		\begin{aligned}
-			\overrightarrow{GA}&=\frac{1}{3}\left[-\frac b 4 \hat x_1+\left(c+\frac 1 2\left(c+\sqrt{c^2-\left(b/2\right)}\right)\right)\hat z_1\right]+\frac 2 3 (c/2)\hat z_1\\
-			&=-\frac{b}{12}\hat x+\left(\frac c 2+\frac 1 6\left(c+\sqrt{c^2-\left(b/2\right)}\right)\right)\hat z_1
+			\overrightarrow{AG}&=\frac{1}{3}\left[-\frac b 4 \hat x_1+\left(c+\frac 1 2\left(c+\sqrt{c^2-\left(b/2\right)}\right)\right)\hat z_1\right]+\frac 2 3 (c/2)\hat z_1\\
+			&=-\frac{b}{12}\hat x_1+\left(\frac c 2+\frac 1 6\left(c+\sqrt{c^2-\left(b/2\right)}\right)\right)\hat z_1
 		\end{aligned}
 	\end{equation}
 	
@@ -622,8 +622,8 @@
 		a_{G,y1}=2\Omega_0\Omega_1R_G\cos(\Omega_1t-\theta_G)
 	\end{equation}
 	其中
-	$$R_G=\sqrt{\left(\frac c 2+\frac 1 6\left(c+\sqrt{c^2-\left(b/2\right)}\right)\right)^2+(b/12)^2}=25.55\,\text{cm}$$
-	$$\theta_G=\arctan\left(\frac{b/12}{c/2+\left(c+\sqrt{c^2-\left(b/2\right)}\right)/6}\right)=0.0653$$
+	$$R_G=\sqrt{\left(\frac c 2+\frac 1 6\left(c+\sqrt{c^2-\left(b/2\right)}\right)\right)^2+(b/12)^2}=25.71\,\text{cm}$$
+	$$\theta_G=\arctan\left(\frac{b/12}{c/2+\left(c+\sqrt{c^2-\left(b/2\right)}\right)/6}\right)=0.1300$$
 	
 	根据质心运动定理，肩关节对大臂作用力的$y_1$分量
 	\begin{equation}\label{E3-17}
@@ -632,7 +632,7 @@
 	
 	联立\eqref{E3-16}\eqref{E3-17}并代入数据得
 	\begin{equation}\label{E3-18}
-		F_{y1}=10.1\,\text{N}
+		F_{y1}=2.66\,\text{N}
 	\end{equation}
 	
 	下面考虑手臂绕过身体中心的竖直轴的角动量$L_z$。易知手臂在竖直平面内的运动对其没有贡献，因此只需求任意时刻$t$手臂相对于该转轴的转动惯量，再乘以$\Omega_0$即可。根据平行轴定理，大臂的转动惯量
@@ -662,7 +662,7 @@
 	
 	联立\eqref{E3-18}\eqref{E3-22}\eqref{E3-23}并代入数据得
 	\begin{equation}
-		M_{z1}=-1.18\,\text{N}\cdot\text{m}
+		M_{z1}=0.304\,\text{N}\cdot\text{m}
 	\end{equation}\\
 	
 	【注】特别地，上述解答不包含本题中的一个彩蛋问题（对应的分数为$20\ui$）。
@@ -894,20 +894,23 @@
 	\end{equation}
 	
 	将$i_c(t)$的傅里叶展开式两边乘以$\cos(2n\pi f_0t)$并积分（在$2\pi f_0t=-\pi$到$\pi$的范围内），得到
+	\begin{equation}\label{E5-09}
+		\int_{-1/(2f_0)}^{1/(2f_0)}i_c(t)\ud t=b_0\int_{-1/(2f_0)}^{1/(2f_0)}\ud t=\frac{1}{f_0}b_0
+	\end{equation}
 	\begin{equation}\label{E5-10}
-		\int_{-1/(2f_0)}^{1/(2f_0)}i_c(t)\cos(2n\pi f_0t)\ud t=b_n\int_{-1/(2f_0)}^{1/(2f_0)}\cos^2(2n\pi f_0t)\ud t=\frac{1}{2f_0}b_n
+		\int_{-1/(2f_0)}^{1/(2f_0)}i_c(t)\cos(2n\pi f_0t)\ud t=b_n\int_{-1/(2f_0)}^{1/(2f_0)}\cos^2(2n\pi f_0t)\ud t=\frac{1}{2f_0}b_n,\,n\geq1
 	\end{equation}
 	
 	同理
 	\begin{equation}\label{E5-11}
-		\int_{-1/(2f_0)}^{1/(2f_0)}i_c(t)\sin(2n\pi f_0t)\ud t=\frac{1}{2f_0}a_n
+		\int_{-1/(2f_0)}^{1/(2f_0)}i_c(t)\sin(2n\pi f_0t)\ud t=\frac{1}{2f_0}a_n,\,n\geq1
 	\end{equation}
 	
 	由于$i_c(t)$是偶函数而$\sin(2n\pi f_0t)$是奇函数，所以\eqref{E5-11}式中的积分为0，所以$a_n=0$。因此$c_n=|b_n|$。
 	
-	计算积分\eqref{E5-10}，得到
+	计算积分\eqref{E5-09}\eqref{E5-10}，得到
 	\begin{equation}
-		b_0=\frac{1}{\pi}\left(\int_{-\pi/2}^{\pi/2}\frac{V_0}{2R}\cos(\phi)\ud\phi+\int_{\pi/2}^{3\pi/2}\frac{V_0}{20R}\cos(\phi)\ud\phi\right)=\frac{9V_0}{10\pi R}
+		b_0=\frac{1}{2\pi}\left(\int_{-\pi/2}^{\pi/2}\frac{V_0}{2R}\cos(\phi)\ud\phi+\int_{\pi/2}^{3\pi/2}\frac{V_0}{20R}\cos(\phi)\ud\phi\right)=\frac{9V_0}{20\pi R}
 	\end{equation}
 	\begin{equation}
 		c_1=|b_1|=\frac{1}{\pi}\left|\int_{-\pi/2}^{\pi/2}\frac{V_0}{2R}\cos^2(\phi)\ud\phi+\int_{\pi/2}^{3\pi/2}\frac{V_0}{20R}\cos^2(\phi)\ud\phi\right|=\frac{11V_0}{40R}
@@ -927,26 +930,26 @@
 			\frac{\upsilon}{20R}[\lambda+(1-|\lambda|)\cos(2\pi f_0 t)]&,\,-\frac{m+\phi_{\lambda}/(2\pi)}{f_0}\leq t\leq\frac{m+1-\phi_{\lambda}/(2\pi)}{f_0}\\
 		\end{aligned}\right.
 	\end{equation}
-	其中$\phi_{\lambda}=\arccos[\lambda/(1-|\lambda|)]$。
+	其中$\phi_{\lambda}=\arccos[-\lambda/(1-|\lambda|)]=\pi-\arccos[\lambda/(1-|\lambda|)]$。
 	
 	此时，计算积分\eqref{E5-10}，可得
 	\begin{equation}
 		\begin{aligned}
 			c_1(\lambda)&=\frac{\upsilon}{2\pi R}\left|\int_{-\phi_{\lambda}}^{\phi_{\lambda}}[\lambda+(1-|\lambda|)\cos(\phi)]\cos(\phi)\ud\phi+\frac{1}{10}\int_{\phi_{\lambda}}^{2\pi-\phi_{\lambda}}[\lambda+(1-|\lambda|)\cos(\phi)]\cos(\phi)\ud\phi\right|\\
 			&=\frac{\upsilon}{2\pi R}\left|\frac{9}{10}\int_{-\phi_{\lambda}}^{\phi_{\lambda}}[\lambda+(1-|\lambda|)\cos(\phi)]\cos(\phi)\ud\phi+\frac{\pi}{10}(1-|\lambda|)\right|\\
-			&=\frac{9\upsilon}{20\pi R}\left|(1-|\lambda|)\arccos\frac{\lambda}{1-|\lambda|}+3\lambda\sqrt{1-\left(\frac{\lambda}{1-|\lambda|}\right)^2}+\frac{\pi}{9}(1-|\lambda|)\right|
+			&=\frac{9\upsilon}{20\pi R}\left|\lambda\sqrt{1-\left(\frac{\lambda}{1-|\lambda|}\right)^2}-(1-|\lambda|)\arccos\frac{\lambda}{1-|\lambda|}+\frac{10\pi}{9}(1-|\lambda|)\right|
 		\end{aligned}
 	\end{equation}
 	
-	对于$0\leq\lambda\leq1/2$，注意到$c_1(\lambda)>c_1(-\lambda)$。故我们只需要计算
-	$$\gamma(\lambda)=(1-\lambda)\arccos\frac{\lambda}{1-\lambda}+3\lambda\sqrt{1-\left(\frac{\lambda}{1-\lambda}\right)^2}+\frac{\pi}{9}(1-\lambda)$$
+	对于$0\leq\lambda\leq1/2$，注意到$c_1(\lambda)\geq c_1(-\lambda)$。故我们只需要计算
+	$$\gamma(\lambda)=\lambda\sqrt{1-\left(\frac{\lambda}{1-|\lambda|}\right)^2}-(1-|\lambda|)\arccos\frac{\lambda}{1-|\lambda|}+\frac{10\pi}{9}(1-|\lambda|)$$
 	在$0\leq\lambda\leq1/2$范围内的最大值。
 	
 	数值求解方程
-	$$\gamma'(\lambda)=\frac{2}{\sqrt{1-2\lambda}}-\arccos\frac{\lambda}{1-\lambda}-\frac{3\lambda}{(1-\lambda)^2\sqrt{1-2\lambda}}-\frac{\pi}{9}=0$$
-	得到$\lambda=0.1082$。其对应的$c_1(\lambda)$即为所求的最大值
+	$$\gamma'(\lambda)=\arccos\frac{\lambda}{1-\lambda}+\frac{(2-\lambda)\sqrt{1-2\lambda}}{(1-\lambda)^2}-\frac{10\pi}{9}=0$$
+	得到$\lambda=0.2058$。其对应的$c_1(\lambda)$即为所求的最大值
 	\begin{equation}
-		(c_1)_{\max}=c_1(\lambda=0.1082)=0.2759\frac{\upsilon}{R}
+		(c_1)_{\max}=c_1(\lambda=0.2058)=0.2767\frac{\upsilon}{R}
 	\end{equation}
 	
 	
