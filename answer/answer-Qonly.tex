@@ -245,25 +245,25 @@
 	
 	结合磁化强度（单位体积内的磁矩）的表达式
 	\begin{equation}\label{E1-22}
-		M=N_c(e\omega R_0^2-e\omega\rho_0^2)
+		M=N_c(\frac 1 2 e\omega R_0^2-\frac 1 2 e\omega\rho_0^2)
 	\end{equation}
 	
 	联立\eqref{E1-20}\eqref{E1-21}\eqref{E1-22}得到
 	\begin{equation}
 		\begin{aligned}
-			M&=\frac{N_ce^3\omega\left(\left[m_e(\omega^2-\Omega_e^2)-\delta\right]^2-\left[\delta-m_i(\omega^2-\Omega_i^2)\right]^2\right)}{\left[\delta^2-m_e(\omega^2-\Omega_e^2)m_i(\omega^2-\Omega_i^2)\right]^2}E_0^2\\
-			&=\frac{N_ce^3\omega\left[m_e(\omega^2-\Omega_e^2)+m_i(\omega^2-\Omega_i^2)-2\delta\right]\left[m_e(\omega^2-\Omega_e^2)-m_i(\omega^2-\Omega_i^2)\right]}{\left[\delta^2-m_e(\omega^2-\Omega_e^2)m_i(\omega^2-\Omega_i^2)\right]^2}E_0^2
+			M&=\frac{N_ce^3\omega\left(\left[m_e(\omega^2-\Omega_e^2)-\delta\right]^2-\left[\delta-m_i(\omega^2-\Omega_i^2)\right]^2\right)}{2\left[\delta^2-m_e(\omega^2-\Omega_e^2)m_i(\omega^2-\Omega_i^2)\right]^2}E_0^2\\
+			&=\frac{N_ce^3\omega\left[m_e(\omega^2-\Omega_e^2)+m_i(\omega^2-\Omega_i^2)-2\delta\right]\left[m_e(\omega^2-\Omega_e^2)-m_i(\omega^2-\Omega_i^2)\right]}{2\left[\delta^2-m_e(\omega^2-\Omega_e^2)m_i(\omega^2-\Omega_i^2)\right]^2}E_0^2
 		\end{aligned}
 	\end{equation}
 	
 	所以
 	\begin{equation}\label{E1-24}
-		T(\omega)=\frac{N_ce^3\omega\left[m_e(\omega^2-\Omega_e^2)+m_i(\omega^2-\Omega_i^2)-2\delta\right]\left[m_e(\omega^2-\Omega_e^2)-m_i(\omega^2-\Omega_i^2)\right]}{\left[\delta^2-m_e(\omega^2-\Omega_e^2)m_i(\omega^2-\Omega_i^2)\right]^2}
+		T(\omega)=\frac{N_ce^3\omega\left[m_e(\omega^2-\Omega_e^2)+m_i(\omega^2-\Omega_i^2)-2\delta\right]\left[m_e(\omega^2-\Omega_e^2)-m_i(\omega^2-\Omega_i^2)\right]}{2\left[\delta^2-m_e(\omega^2-\Omega_e^2)m_i(\omega^2-\Omega_i^2)\right]^2}
 	\end{equation}
 	
 	比较\eqref{E1-17}和\eqref{E1-24}可得
 	\begin{equation}
-		T(\omega)=\frac{2cn(\omega)\varepsilon_0}{\omega}S(\omega)
+		T(\omega)=\frac{cn(\omega)\varepsilon_0}{\omega}S(\omega)
 	\end{equation}
 	
 	(3)（4分）
@@ -275,7 +275,7 @@
 	
 	利用\eqref{E1-22}式，结合$B=\mu_0 M$，得到（以$z$轴正方向为正）
 	\begin{equation}\label{E1-27}
-		B=\mu_0 M=-2.9\times10^{-4}\,\text{T}
+		B=\mu_0 M=-1.5\times10^{-4}\,\text{T}
 	\end{equation}
 	
 	代入数据（$\omega=\omega_1$）至\eqref{E1-17}式，得到
@@ -285,14 +285,14 @@
 	
 	综合\eqref{E1-27}\eqref{E1-28}可得
 	\begin{equation}
-		\theta_F=S(\omega_1)BL=3.2\times10^{-7}\,\text{rad}
+		\theta_F=S(\omega_1)BL=1.6\times10^{-7}\,\text{rad}
 	\end{equation}
 	
 	(4.1)（7分）
 	
 	能量项$\kappa\rho_x^3$对应的力为
 	\begin{equation}\label{E1-30}
-		F_{\kappa}=-\frac{\partial\Delta V}{\partial\rho_x}=-3\kappa\rho_x^2
+		F_{\kappa}=-\frac{1}{N_c}\frac{\partial\Delta V}{\partial\rho_x}=-3\kappa\rho_x^2
 	\end{equation}
 	
 	因为$3\kappa\rho_0^2\ll |m_e(\omega_0^2-\Omega_e^2)\rho_0|$，所以可以将上述与$\kappa$成正比的项当作微扰。在原有运动轨迹（匀速圆周运动）的一个周期内，该项的期望值为
@@ -326,12 +326,12 @@
 	
 	而在另一种情形下，一个正带电粒子粒子在假想磁场$B_{eff}$中的磁能的绝对值
 	\begin{equation}\label{E1-36}
-		u_{eff}=e\omega R_0^2 |B_{eff}|
+		u_{eff}=\frac{e\omega_0 R_0^2}{2} |B_{eff}|
 	\end{equation}
 	
 	由题设$u_{eff}=u_{\kappa}$，结合\eqref{E1-35}\eqref{E1-36}可得
 	\begin{equation}
-		|B_{eff}|=\frac{m_i\Omega_i^2R_{\kappa}^2}{2e\omega R_0^2}=49\,\text{T}
+		|B_{eff}|=\frac{m_i\Omega_i^2R_{\kappa}^2}{e\omega_0 R_0^2}=49\,\text{T}
 	\end{equation}
 	
 	这一等效磁场$|B_{eff}|$比(3)中算出的真实磁场$|B|$大五个数量级。
@@ -350,7 +350,7 @@
 	\noindent
 	\textbf{题二：动量是否守恒？（Is Momentum Conserved?）}
 	
-	(1)（13分）
+	(1)（12分）
 	
 	首先将$V_p(d)$写成等效的对应每对正负电荷$\pm Q$的形式。平均每对正负离子占据的体积为
 	\begin{equation}\label{E2-01}
@@ -359,12 +359,12 @@
 	
 	因此，对应于每对正负离子的晶体内势能形式为
 	\begin{equation}\label{E2-02}
-		V(d)=\frac{1}{V_0}V_p(d)=\frac{\zeta}{2a^3}d^2
+		V(d)=V_0V_p(d)=2a^3\zeta d^2
 	\end{equation}
 	
 	相应于每个离子受到的回复力
 	\begin{equation}\label{E2-03}
-		F(d)=-V'(d)=-\frac{\zeta}{a^3}d
+		F(d)=-V'(d)=-4a^3\zeta d
 	\end{equation}
 	负号表示其方向与位移$\vec d$相反。
 	
@@ -375,7 +375,7 @@
 	
 	联立\eqref{E2-03}\eqref{E2-04}得
 	\begin{equation}\label{E2-05}
-		\vec{d}_m=\frac{Qa^3}{\zeta}\vec E
+		\vec{d}_m=\frac{Q}{4a^3\zeta}\vec E
 	\end{equation}
 	
 	一对正负离子对应的电偶极矩为$\vec p_m=Q\vec{d}_m$，对应的电极化强度为
@@ -385,12 +385,12 @@
 	
 	由题文，知$\vec{P}=\chi\vec E+\vec P_m$。结合\eqref{E2-05}\eqref{E2-06}得
 	\begin{equation}\label{E2-07}
-		\vec{P}_{st}=\left(\chi+\frac{Q^2}{2\zeta}\right)\vec E
+		\vec{P}_{st}=\left(\chi+\frac{Q^2}{8a^6\zeta}\right)\vec E
 	\end{equation}
 	
 	结合电位移矢量的定义$\vec D=\varepsilon_0\vec E+\vec P=\varepsilon\vec E$得到
 	\begin{equation}\label{E2-08}
-		\varepsilon_{st}=\chi+\frac{Q^2}{2\zeta}+\varepsilon_0
+		\varepsilon_{st}=\chi+\frac{Q^2}{8a^6\zeta}+\varepsilon_0
 	\end{equation}
 	
 	当$\omega$很大时，离子实的运动跟不上电场的变化，因此电极化强度只有电场的贡献$\vec P=\vec P_e$。故
@@ -406,7 +406,7 @@
 	\end{equation}
 	故$m_A\vec R_A+m_B\vec R_B=0$，或$\vec R_B=-m_A\vec R_A/m_B$。
 	
-	(2.2)（11分）
+	(2.2)（10分）
 	
 	考虑两种离子相对质心的运动，定义$\vec r=\vec r_A-\vec r_B=\vec R\ue^{\ui(kz-\omega t)}$。由$k\ll 1/a$，在某一对离子附近的离子实分布同定义$V_p$时的情形区别很小，回复力仍可近似为$F(\vec r)$。结合电场项，其运动方程为
 	\begin{equation}\label{E2-11}
@@ -414,7 +414,7 @@
 	\end{equation}
 	其中约化质量$m=m_Am_B/(m_A+m_B)$。$F(\vec r)$由\eqref{E2-03}给出，即
 	\begin{equation}\label{E2-12}
-		m\ddot{\vec r}=-\frac{\zeta}{a^3}\vec r+Q\vec E
+		m\ddot{\vec r}=-4a^3\zeta\vec r+Q\vec E
 	\end{equation}
 	
 	参考(1)中的推导，可得电极化强度的表达式
@@ -434,15 +434,15 @@
 	
 	代回\eqref{E2-12}式，得到
 	\begin{equation}\label{E2-16}
-		m\ddot{\vec r}=-\left(\frac{\zeta}{a^3}+\frac{Q^2}{2a^3(\chi+\varepsilon_0)}\right)\vec r
+		m\ddot{\vec r}=-\left(4a^3\zeta+\frac{Q^2}{2a^3(\chi+\varepsilon_0)}\right)\vec r
 	\end{equation}
 	
 	因此对应的频率与$k$无关，为
 	\begin{equation}\label{E2-17}
-		\nu_{LO}=\frac 1 {2\pi}\sqrt{\frac{(m_A+m_B)}{m_Am_B}\left(\frac{\zeta}{a^3}+\frac{Q^2}{2a^3(\chi+\varepsilon_0)}\right)}
+		\nu_{LO}=\frac 1 {2\pi}\sqrt{\frac{(m_A+m_B)}{m_Am_B}\left(4a^3\zeta+\frac{Q^2}{2a^3(\chi+\varepsilon_0)}\right)}
 	\end{equation}
 	
-	(2.3)（16分）
+	(2.3)（13分）
 	
 	将\eqref{E2-14}式代入$\vec D$和$\vec E$的关系，得到
 	\begin{equation}\label{E2-18}
@@ -451,17 +451,17 @@
 	
 	联立\eqref{E2-12}\eqref{E2-18}得
 	\begin{equation}\label{E2-19}
-		m\ddot{\vec r}=-\frac{\zeta}{a^3}\vec r+\frac{\omega^2\mu_0Q^2}{2a^3\left[k^2-\omega^2\mu_0(\chi+\varepsilon_0)\right]}\vec r
+		m\ddot{\vec r}=-4a^3\zeta\vec r+\frac{\omega^2\mu_0Q^2}{2a^3\left[k^2-\omega^2\mu_0(\chi+\varepsilon_0)\right]}\vec r
 	\end{equation}
 	
 	即
 	\begin{equation}\label{E2-20}
-		\omega^2=\frac{1}{m}\left(\frac{\zeta}{a^3}-\frac{\omega^2\mu_0Q^2}{2a^3\left[k^2-\omega^2\mu_0(\chi+\varepsilon_0)\right]}\right)
+		\omega^2=\frac{1}{m}\left(4a^3\zeta-\frac{\omega^2\mu_0Q^2}{2a^3\left[k^2-\omega^2\mu_0(\chi+\varepsilon_0)\right]}\right)
 	\end{equation}
 	
 	解得
 	\begin{multline}\label{E2-21}
-		\omega^2_{\pm}(k)=\frac{\zeta(m_A+m_B)}{2m_Am_Ba^3}+\frac{k^2}{2\mu_0(\chi+\varepsilon_0)}+\frac{(m_A+m_B)Q^2}{4m_Am_Ba^3(\chi+\varepsilon_0)}\\ \pm\sqrt{\left(\frac{\zeta(m_A+m_B)}{2m_Am_Ba^3}+\frac{k^2}{2\mu_0(\chi+\varepsilon_0)}+\frac{(m_A+m_B)Q^2}{4m_Am_Ba^3(\chi+\varepsilon_0)}\right)^2-\frac{(m_A+m_B)\zeta k^2}{2m_Am_Ba^3\mu_0(\chi+\varepsilon_0)}}
+		\omega^2_{\pm}(k)=\frac{2a^3\zeta(m_A+m_B)}{m_Am_B}+\frac{k^2}{2\mu_0(\chi+\varepsilon_0)}+\frac{(m_A+m_B)Q^2}{4m_Am_Ba^3(\chi+\varepsilon_0)}\\ \pm\sqrt{\left(\frac{2a^3\zeta(m_A+m_B)}{m_Am_Ba^3}+\frac{k^2}{2\mu_0(\chi+\varepsilon_0)}+\frac{(m_A+m_B)Q^2}{4m_Am_Ba^3(\chi+\varepsilon_0)}\right)^2-\frac{2(m_A+m_B)a^3\zeta k^2}{m_Am_B\mu_0(\chi+\varepsilon_0)}}
 	\end{multline}
 	
 	对于$\omega_+$，在$k$很大时，$\omega_+^2$的首阶非零项正比于$k^2$，即
@@ -471,7 +471,7 @@
 	
 	在$k$很大时，根式中的后一项远小于前一项。利用展开式$\sqrt{1-x}\approx 1-x/2,\,x\ll1$，得到
 	\begin{equation}\label{E2-23}
-		\omega_-^2\approx\frac{(m_A+m_B)\zeta }{m_Am_Ba^3},\,\omega_-\approx\sqrt{\frac{(m_A+m_B)\zeta }{m_Am_Ba^3}}
+		\omega_-^2\approx\frac{4(m_A+m_B)a^3\zeta }{m_Am_B},\,\omega_-\approx\sqrt{\frac{4(m_A+m_B)\zeta a^3 }{m_Am_B}}
 	\end{equation}
 	
 	因此
@@ -518,7 +518,7 @@
 	\noindent
 	\textbf{题三：研究物理不如研究机器学习（It is Better to Study Machine Learning Than Study Physics）}
 	
-	(1)（6分）
+	(1)（7分）
 	
 	参考系$S_1$是非惯性系，其中的加速度$\vec a_1$与惯性参考系中的加速度$\vec a_0$不同。两者的差异由非惯性系中的惯性力（惯性加速度）给出，其表达式为
 	\begin{equation}\label{E3-01}
@@ -526,7 +526,7 @@
 	\end{equation}
 	其中$\vec a_S$是参考系$S_1$坐标原点在惯性系中的加速度，$\vec\omega_S$是参考系$S_1$的角速度，$\vec r_1$是$C$点在参考系$S_1$中的位矢，$\vec r_{\perp}$是$\vec r_1$在垂直于参考系$S_1$的转轴方向的投影。这几项惯性力分别是：平动惯性力、惯性离心力、科里奥利力、坐标系变速旋转导致的惯性力。
 	
-	(2)（22分）
+	(2)（24分）
 	
 	记
 	$$R_0=\sqrt{\left(c+\sqrt{c^2-\left(b/2\right)^2}\right)^2+(b/2)^2}=60.39\,\text{cm}$$
@@ -607,7 +607,7 @@
 		|\vec r_1^{\star}-\vec r_1|=0.829\,\text{m}
 	\end{equation}
 	
-	(3)（22分）
+	(3)（24分）
 	
 	在肘关节不动的情况下，手臂整体可以认为是一个刚体。计算$t=0$时刻该刚体的质心$G$相对$A$点的位置，得到
 	\begin{equation}
@@ -1079,7 +1079,7 @@
 	
 	联立\eqref{E6-20}\eqref{E6-21}\eqref{E6-22}得
 	\begin{equation}\label{E6-23}
-		\frac{\xi V_0}{\gamma_bR_0T}\frac{\ud p_a(t)}{\ud t}-\frac{\xi V_0}{\gamma_bR_0T}\frac{\ud p_b(t)}{\ud t}=-\frac{d_2}{d_1} p_E(t)
+		\frac{\xi V_0}{\gamma_aR_0T}\frac{\ud p_a(t)}{\ud t}-\frac{\xi V_0}{\gamma_bR_0T}\frac{\ud p_b(t)}{\ud t}=-\frac{d_2}{d_1} p_E(t)
 	\end{equation}
 	
 	积分得到
@@ -1089,12 +1089,12 @@
 	
 	注意到对积分上限求导等价于被积函数本身，联立\eqref{E6-20}\eqref{E6-21}\eqref{E6-22}\eqref{E6-24}得
 	\begin{equation}\label{E6-25}
-		p_U(t)=\frac{\gamma_a\gamma_bR_0Td_2}{(\gamma_b-\gamma_a)\xi V_0d_1}\int_0^t p_E(t')\ud t'+\frac{(\gamma_b+\gamma_a)d_2}{(\gamma_b-\gamma_a)d_1}p_E(t)+\frac{\xi V_0d_2}{(\gamma_b-\gamma_a)R_0Td_1}\frac{\ud p_E(t)}{\ud t}
+		p_U(t)=\frac{\gamma_a\gamma_bR_0Td_2}{(\gamma_a-\gamma_b)\xi V_0d_1}\int_0^t p_E(t')\ud t'+\frac{(\gamma_b+\gamma_a)d_2}{(\gamma_a-\gamma_b)d_1}p_E(t)+\frac{\xi V_0d_2}{(\gamma_a-\gamma_b)R_0Td_1}\frac{\ud p_E(t)}{\ud t}
 	\end{equation}
 	
 	因此
 	\begin{equation}
-		K_p=\frac{(\gamma_b+\gamma_a)d_2}{(\gamma_b-\gamma_a)d_1},\,K_i=\frac{\gamma_a\gamma_bR_0Td_2}{(\gamma_b-\gamma_a)\xi V_0d_1},\,K_d=\frac{\xi V_0d_2}{(\gamma_b-\gamma_a)R_0Td_1}
+		K_p=\frac{(\gamma_b+\gamma_a)d_2}{(\gamma_a-\gamma_b)d_1},\,K_i=\frac{\gamma_a\gamma_bR_0Td_2}{(\gamma_a-\gamma_b)\xi V_0d_1},\,K_d=\frac{\xi V_0d_2}{(\gamma_a-\gamma_b)R_0Td_1}
 	\end{equation}
 	
 	比例项反映系统当前的误差值，让系统有回到平衡值的倾向。积分项反映过去一段时间的误差，有助于消除系统在平衡值附近的震荡。微分项考虑系统误差值随时间的变化，可以对将来的变化提前做出反应。
